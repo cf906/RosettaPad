@@ -11,7 +11,7 @@ SERVICE_NAME="rosettapad"
 
 echo "[1/8] Installing dependencies (apk)..."
 apk update
-apk add --no-cache build-base bluez bluez-dev pkgconf rfkill dbus dbus-openrc
+apk add --no-cache build-base linux-headers bluez bluez-dev pkgconf dbus dbus-openrc
 
 rfkill unblock bluetooth 2>/dev/null || true
 
